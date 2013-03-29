@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="22900bcd-a3d3-44ca-b3aa-013ffca49edf" name="UMLClassDiagram1" linkedPackageId="91a3fc6c-5cec-4c86-97e9-cc8573627b5e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9560e2c9-6145-47b1-b32a-7da38f1fa108">
+      <profileInstance Id="9223d591-bc69-44f4-8892-f404efe75644" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="54e43468-998d-4c7c-a608-6ed7433482d3">
+      <profileInstance Id="75854433-e771-43b6-947d-cccb6fac1628" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="854d7b4b-66ac-4f73-983f-cc3747c75cdf" name="IState" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33f55e3e-b811-46b2-9ec0-787808be62eb" />
+        <ownedOperations>
+          <operation Id="2853bde7-c7f9-4f07-a1ad-8a49e454ec45" name="InsertQuarter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="432603b3-32e2-4408-900c-79341e4775f3" />
+          </operation>
+          <operation Id="39d4969c-b84e-45e0-b8fd-735259e5bc9d" name="EjectQuarter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d415a4d1-23cf-4904-b067-38984bc18b51" />
+          </operation>
+          <operation Id="2030a686-5c1c-419f-a6d3-f5361cbfd44a" name="TurnCrank" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4f53da2-7eb5-4233-8aa8-fae4ad3fb61a" />
+          </operation>
+          <operation Id="b09decf7-8f9d-426d-8f2e-bce7e07be945" name="Dispense" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="66175225-22df-4c90-b769-cf010802256b" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="56b15e9a-f21d-455d-a70c-5bae67ccf36e" name="NoQuarterState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39878c02-d84f-439a-aafc-ca525c0d5f06" />
+        <suppliersInternal>
+          <interfaceRealization Id="87bc1bd2-0b5d-439d-9f6c-ec897642082f">
+            <interfaceMoniker Id="854d7b4b-66ac-4f73-983f-cc3747c75cdf" LastKnownName="IState" />
+            <elementDefinition Id="3d098208-ab5d-43ca-a504-504bd95fda6d" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="946088ce-9273-4af1-a274-5762c0794390" name="InsertQuarter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="30bcd932-9230-444c-b622-213a3c3c6804" />
+          </operation>
+          <operation Id="133a97f0-8ed9-45ce-93f3-ea58fcea247e" name="EjectQuarter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d12837ed-b6bb-4aa6-9dbd-bc106509fb77" />
+          </operation>
+          <operation Id="6ac892db-999d-4474-91ad-08bc6578ccde" name="TurnCrank" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a8057ab-6a5c-4a75-82dd-312a945d5b07" />
+          </operation>
+          <operation Id="6482e8fe-04b3-4af3-bbf3-c04968e54efd" name="Dispense" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b37cc5b-5b8f-4917-81de-681ee6102a70" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="22154a3e-38f6-4874-aab9-2d0acdd4f9b0" name="HasQuarterState" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9e69d9e-cd0d-4090-a0f5-aee5ea8c12ed" />
+        <suppliersInternal>
+          <interfaceRealization Id="65b4ca1f-3827-42cd-9540-2afe1adc522f">
+            <interfaceMoniker Id="854d7b4b-66ac-4f73-983f-cc3747c75cdf" LastKnownName="IState" />
+            <elementDefinition Id="2921462f-00af-49d6-a050-2abd78f23e7f" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="54e1b9af-0760-40d9-83d0-4d6feb7b73a7" name="InsertQuarter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eb0684d2-1059-43a0-9cef-1b35cb455d50" />
+          </operation>
+          <operation Id="d20f1180-d920-4072-a6b7-d1ccb9f23739" name="EjectQuarter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9d31d7ac-1e40-42c4-a310-f303d396866c" />
+          </operation>
+          <operation Id="c19c57e9-e450-4727-b2a4-5829c75a7f36" name="TurnCrank" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="927752ea-0781-4d9a-81f5-93c82d286b85" />
+          </operation>
+          <operation Id="5fc63957-c59b-41d7-b48f-8bdf62a5b5af" name="Dispense" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f216702-ef0e-49d1-a09b-413157182835" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="91a3fc6c-5cec-4c86-97e9-cc8573627b5e" name="GumballMachine.Modeling">
+    <elementDefinition Id="e3a18956-0f91-453c-a2df-818d0b0900fa" />
+  </package>
+</logicalClassDesignerModel>
